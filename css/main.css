@@ -1,0 +1,97 @@
+html
+{
+    height:100%;
+}
+
+*
+{
+    text-decoration: none;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:radial-gradient(circle, #1D294E, rgb(28, 19, 52), #0B0F1D);
+    width:100%;
+    height:100%;
+}
+
+#header
+{
+    #width:100%;
+    height:100px;
+}
+
+#navigation
+{
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+}
+
+#nav-ul
+{
+    list-style:none;
+    margin:0 auto;
+}
+
+.nav-elements 
+{
+    float: left;
+}
+
+.nav-elements a{
+    display:block;
+    padding-left:3em;
+    padding-right:3em;
+    padding-top:2em;
+    padding-bottom:2em;
+    font-size:18px;
+    font-weight: 600;
+    color:rgba(214,224,255,0.6);
+}
+
+.nav-elements a:hover{
+    border:1px solid radial-gradient(circle, #1D294E, #131C34, #0B0F1D);
+    color:#2de7d8;
+    border-radius: 5px;
+    background:radial-gradient(circle, #1D294E, #131C34, #0B0F1D);
+    opacity: 0.5;
+    
+}
+
+@media screen and(max-width:420px)
+{
+    #header
+    {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        justify-content:space-around;
+    }
+
+    #navigation {
+        display:none;
+    }
+
+    #navigation li 
+    {
+        width:100%;
+        display:block;
+    }
+
+    #navigation a {
+        display:block;
+        padding:8px;
+    }
+
+    #first-button
+    {
+        text-align: center;
+        display:block;
+        cursor:pointer;
+        color:rgba(214,224,255,0.6);
+    }
+}
